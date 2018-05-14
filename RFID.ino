@@ -1,11 +1,4 @@
-/*
- * 
- * All the resources for this project: https://www.hackster.io/Aritro
- * Modified by Aritro Mukherjee
- * 
- * 
- */
- 
+
 #include <SPI.h>
 #include <MFRC522.h>
  
@@ -48,7 +41,7 @@ void loop()
   Serial.println();
   Serial.print("Message : ");
   content.toUpperCase();
-  if (content.substring(1) == "BD 31 15 2B") //change here the UID of the card/cards that you want to give access
+  if (content.substring(1) == "BD 31 15 3B") //change here the UID of the card/cards that you want to give access
   {
     Serial.println("Authorized access");
     Serial.println();
